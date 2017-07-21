@@ -1,0 +1,13 @@
+version: '2'
+services:
+  uj-mono:
+    image: mono_uj-mono
+  uj-nginx:
+    build:
+      context: .
+    volumes:
+    - ../mono/code/pyapp/static:/static
+    ports:
+    - "80:80"
+    links:
+    - uj-mono

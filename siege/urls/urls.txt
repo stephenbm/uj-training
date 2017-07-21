@@ -1,0 +1,13 @@
+http://localhost/
+http://localhost/time?1
+http://localhost/static/images/fuuu.png
+http://localhost/static/images/worm.svg
+http://localhost/time?2
+http://localhost/static/js/pyapp.js
+http://localhost/static/css/pyapp.css
+http://localhost/time?3
+http://localhost/devops/5
+http://localhost/devops/12
+http://localhost/devops/10
+http://localhost/time?4
+http://localhost/devops/404

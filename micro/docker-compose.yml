@@ -1,0 +1,23 @@
+version: '2'
+services:
+  uj-mono:
+    image: mono_uj-mono
+  uj-reactions:
+    build:
+      context: .
+      args:
+        CONF_FILE: reactions.conf
+    volumes:
+    - ../mono/code/pyapp/static/reactions:/reactions
+  uj-nginx:
+    build:
+      context: .
+      args:
+        CONF_FILE: nginx.conf
+    volumes:
+    - ../mono/code/pyapp/static:/static
+    ports:
+    - "80:80"
+    links:
+    - uj-mono
+    - uj-reactions

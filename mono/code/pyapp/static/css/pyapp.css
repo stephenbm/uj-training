@@ -1,0 +1,35 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #ffffff;
+    background-image: url("/static/images/fuuu.png");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+
+#clock {
+    position: fixed;
+    top: 0em;
+    right: 2em;
+}
+
+#devops {
+    position: fixed;
+    top: 8em;
+    bottom: 8em;
+    left: 0em;
+    right: 0em;
+}
+
+#button {
+    position: fixed;
+    bottom: 3em;
+    left: 0em;
+    right: 0em;
+}
+
+#button > span:hover {
+    cursor: pointer;
+    border-bottom:  solid 1px black;
+}
